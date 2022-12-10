@@ -1,0 +1,213 @@
+:root {
+	--background-footer-color: #2e2f42;
+	--background-primary-color: #ffffff;
+	--background-secondary-color: #f4f4fd;
+	--title-text-color: #2e2f42;
+	--primary-text-color: #434455;
+	--accent-color: #e7e9fc;
+	--primary-brand-click: #4d5ae5;
+}
+
+.hidden,
+.section-title-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+body {
+	background-color: var(--background-primary-color);
+	color: var(--primary-text-color);
+	font-family: Roboto, serif;
+	font-size: 16px;
+	letter-spacing: 0.02em;
+}
+
+p {
+	line-height: 1.5;
+}
+
+nav .logo {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #2e2f42;
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 1.33;
+	letter-spacing: 0.03em;
+}
+nav .logo-blue {
+	color: #4d5ae5;
+}
+.link-current {
+	color: #4d5ae5;
+}
+
+.list {
+	list-style: none;
+}
+/* Site nav */
+.site-nav .link {
+	color: #2e2f42;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+	color: #4d5ae5;
+}
+.site-nav .link:active {
+	color: var(--primary-brand-click);
+}
+.site-nav a {
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+}
+.auth-nav a {
+	text-decoration: none;
+	color: rgba(67, 68, 85, 1);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+}
+.auth-nav a:hover,
+.auth-nav a:focus {
+	color: #4d5ae5;
+}
+/* Hero */
+.hero {
+	background-color: var(--background-footer-color);
+}
+.hero-title {
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 1.07;
+	text-align: center;
+	letter-spacing: 0.02em;
+}
+.button {
+	cursor: pointer;
+	appearance: none;
+	border: 0;
+	border-radius: 5px;
+	color: #fff;
+	padding: 8px 16px;
+	background-color: #4d5ae5;
+	font-family: "Roboto";
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.19;
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.04em;
+}
+.button:hover {
+	cursor: pointer;
+	appearance: none;
+	border: 0;
+	border-radius: 5px;
+	color: #fff;
+	padding: 8px 16px;
+	font-size: 16px;
+	background-color: #404bbf;
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+	border-radius: 4px;
+}
+.button:focus {
+	cursor: pointer;
+	appearance: none;
+	border: 0;
+	border-radius: 5px;
+	color: #fff;
+	padding: 8px 16px;
+	font-size: 16px;
+	background-color: #404bbf;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+}
+
+/* Section */
+
+.section .title,
+.section-secondary .title {
+	color: var(--title-text-color);
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+}
+.section-title {
+	color: var(--title-text-color);
+	font-size: 36px;
+	line-height: 1.11;
+	text-align: center;
+	letter-spacing: 0.02em;
+	text-transform: capitalize;
+}
+.section-secondary {
+	background-color: #f4f4fd;
+}
+
+/* Advantages */
+.advantages-list .title {
+	color: var(--title-text-color);
+}
+
+/* Footer */
+.footer {
+	background-color: var(--background-footer-color);
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+}
+
+.footer .text {
+	color: #e7e9fc;
+}
+footer .logo {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #f4f4fd;
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.33;
+	letter-spacing: 0.03em;
+}
+footer .logo-blue {
+	color: #4d5ae5;
+}
+
+/* Portfolio styles */
+
+.port-button {
+	color: #4d5ae5;
+	background-color: #f4f4fd;
+	font-family: 'Roboto';
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.04em;
+	border: 1px solid #e7e9fc;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.port-button:hover,
+.port-button:focus {
+	color: #ffffff;
+	background-color: #4d5ae5;
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
