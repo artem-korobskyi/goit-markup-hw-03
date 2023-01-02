@@ -259,11 +259,12 @@ margin-left: 77px;
 	display: flex;
 }
 
+.sec-doing {
+padding-bottom: 120px;
+}
+
 .doing .doing-item + .doing-item {
 	margin-left: 24px;
-}
-.doing-item {
-	margin-bottom: 120px;
 }
 
 .section-secondary {
@@ -295,29 +296,28 @@ margin-left: 77px;
 	}
 
 	.person-description {
-	padding-top: 8px;	
+	margin-top: 8px;	
 	}	
 
 
 /* Footer */
 .footer {
 	background-color: var(--background-footer-color);
-	font-size: 16px;
-	line-height: 1.5;
-	letter-spacing: 0.02em;
-}
-
-.footer > .container {
 	padding: 100px 0;
 }
+
+/* .footer > .container {
+	
+} */
 
 .footer .text {
 	color: #e7e9fc;
 	width: 264px;
-	padding-top: 16px;
+	margin-top: 16px;
 }
 
 .footer .logo {
+	display: flex;
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #f4f4fd;
@@ -334,34 +334,28 @@ margin-left: 77px;
 
 /* Portfolio styles */
 
-.head-port {
-	background: #FFFFFF;
+.page-header {
 	box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .port-sect {
 	padding-top: 96px;
     padding-bottom: 120px;
-    margin: auto;
     }
 
-.port-filter {
+.port-list {
     display: flex;
     margin-bottom: 72px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;  
-	}
-
-.port-filter > .list {
-	display: flex;
 }
 
 .list >.but-item:not(last-child) {
-        padding-right: 24px;
+    margin-right: 24px;
 }
-.list >.but-item:(last-child) {
-	padding-right: 0;
+.list >.but-item:last-child {
+	margin-right: 0;
 }
 
 .port-button {
@@ -387,20 +381,20 @@ margin-left: 77px;
 }
 
 .port-work{
-margin: 0;
-padding: 0;
 display: flex;
 flex-wrap: wrap;
 column-gap: 24px;
+row-gap: 48px;
 }
 
-.port-work > .item {
-flex-basis: calc((100% - 48px) / 3);
-border: 0.5px solid #F4F4FD;
-box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+.port-work > .port-item {
+	flex-basis: calc((100% - 48px) / 3);
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .list-ready {
+	border: 0.5px solid #F4F4FD;
+	border-top: 0;
 	padding: 32px 16px;
 }
 
@@ -410,9 +404,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 	font-size: 20px;
 	line-height: 1.2;
 	letter-spacing: 0.02em;
-	text-align: start;
 	text-transform: capitalize;
-	margin: 0;
-	padding-bottom: 8px;
+	margin-bottom: 8px;
 
 }
